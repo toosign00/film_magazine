@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>film magazine</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        main {
+            width: 100%;
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="myAudio">
+        <source src="./image/The-World-Deserves-Witnesses.mp3" type="audio/mp3">
+    </audio>
+    <header>
+        <a href="index.html" class="logos">
+            <img src="./image/film magazine..svg" alt="logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="store.html" class="link">Store</a></li>
+                <li><a href="workshop.html" class="link">Workshop</a></li>
+                <li><a href="exhibit.html" class="link">Exhibit.</a></li>
+                <li><a href="filmlab.html" class="link">Film lab</a></li>
+                <li><a href="news.html" class="link">News</a></li>
+            </ul>
+            <button class="menu-icon">
+                <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M13 18H20" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" />
+                </svg>
+            </button>
+            <div class="toggleNav">
+                <a href="store.html" class="link">Store</a>
+                <a href="workshop.html" class="link">Workshop</a>
+                <a href="exhibit.html" class="link">Exhibit.</a>
+                <a href="filmlab.html" class="link">Film lab</a>
+                <a href="news.html" class="link">News</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <video src="./image/The World Deserves Witnesses.mp4" autoplay muted loop></video>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <p>HyunSoo Ro<br>
+                Department of Digital Media Design and Programming<br>
+                Kaywon University of Art & Design<br>
+                Contact : toosign22361041@kaywon.ac.kr<br>
+            </p>
+        </div>
+        <div class="footer-right">
+            <img src="./image/film magazine..svg" alt="logo" class="footer-logo">
+            <p>© 2024 film magazine. All rights reserved.</p>
+            <div class="social-icons">
+                <img src="./image/instagram-basic.png" class="social-icon" id="instagram">
+                <img src="./image/github-basic.png" class="social-icon" id="github">
+                <img src="./image/behance-basic.png" class="social-icon" id="behance">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/main.js"></script>
+
+    <script>
+        var audioElem = document.getElementById('myAudio');
+
+        // 권한 요청 후 허용되면 재생
+        audioElem.play().then(function () {
+            // 재생 시작
+        }).catch(function (err) {
+            // 재생 차단된 경우 처리
+        });
+    </script>
+</body>
+
+</html>

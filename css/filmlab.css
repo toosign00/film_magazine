@@ -1,0 +1,154 @@
+main {
+    width: 100%;
+    background-color: #fff;
+    padding: 1.5rem 2.5rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    transition: all 0.35s ease;
+}
+
+.title {
+    color: #FE5F00;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.sub-text {
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    gap: 5rem;
+}
+
+.lab-img {
+    width: 800px;
+    height: 528px;
+}
+
+
+.swiper {
+    width: 800px;
+    height: 528px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #fff;
+    opacity: 0.5;
+    padding: 15px 5px;
+    border-radius: 20px;
+    color: black !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: #FE5F00;
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+
+    .title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    h1 {
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2.75rem;
+        transition: all 0.35s ease;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+    }
+
+    .lab-img {
+        width: 400px;
+        height: 264px;
+    }
+
+    .swiper {
+        width: 400px;
+        height: 264px;
+    }
+
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+
+    .title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    h1 {
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2.75rem;
+        transition: all 0.35s ease;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+    }
+
+    .lab-img {
+        width: 400px;
+        height: 264px;
+    }
+
+    .swiper {
+        width: 400px;
+        height: 264px;
+    }
+}
